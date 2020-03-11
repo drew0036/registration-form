@@ -2,32 +2,34 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Contact form</title>
+  <title>Registration Form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section>
+  <section class="pad-t pad-b gutter-1-2">
     <div class="">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       <h2>Personal details</h2>
-      <form class="" action="index.html" method="post">
-        <div class="">
+      <form class="grid push-0" method="POST" action="https://formspree.io/drew0036@algonquinlive.com">
+        <div class="unit xs-1 s-1 m-1 l-1-2">
           <label for="name">Name</label>
           <input id="name" name="name" required>
         </div>
-        <div class="">
+        <div class="unit push xs-1 s-1 m-1 l-1-2">
           <label for="name">Age</label>
           <input id="age" name="age" required>
         </div>
-        <div class="">
-          <label for="email">Your email</label>
+        <div class="unit push xs-1 s-1 m-1 l-1-2">
+          <label for="email">Email</label>
           <input id="email" type="email" name="email" required>
         </div>
-        <div class="">
+        <div class="unit push xs-1 s-1 m-1 l-1-2">
           <label for="fitness">Physical fitness</label>
           <select id="fitness" name="_select">
             <option>Super-human</option>
@@ -36,18 +38,21 @@
             <option>A little couch-potato-y</option>
           </select>
         </div>
-        <div class="">
+        <div class="unit push xs-1 s-1 m-1 l-1">
           <label for="address">Address</label>
           <input id="address" type="text" required>
         </div>
-        <h2>Mission Statement</h2>
-        <div class="">
+        <div class="unit push-0 xs-1 s-1 m-1 l-1">
+          <h2>Mission Statement</h2>
+        </div>
+        <div class="unit push xs-1 s-1 m-1 l-1">
           <label for="statement">Why do you want to go to Mars?</label>
-          <input id="statement" type="text" required>
+          <textarea id="statement" name="" required>
         </div>
-        <div>
-          <button class="btn" type="submit">Register for the trip!</button>
+        <div class="unit push xs-1 s-1 m-1 l-1">
+          <button class="btn btn-light mega" type="submit">Register for the trip!</button>
         </div>
+        <input type="hidden" name="_subject" value="Request to join the mission">
       </form>
     </div>
   </section>
