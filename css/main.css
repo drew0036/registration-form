@@ -1,3 +1,25 @@
 html {
   font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+}
+
+section {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h1 {
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .pad-right {
+    padding: .5rem;
+  }
+
+  .pad-left {
+    padding: .5rem;
+  }
+
 }
