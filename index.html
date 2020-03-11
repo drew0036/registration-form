@@ -15,8 +15,9 @@
     <div class="">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      <h2>Personal details</h2>
-      <form class="grid push-0" method="POST" action="https://formspree.io/drew0036@algonquinlive.com">
+      <fieldset>
+        <legend>Personal details</legend>
+        <form class="grid push-0" method="POST" action="https://formspree.io/drew0036@algonquinlive.com"></form>
         <div class="unit xs-1 s-1 m-1 l-1-2">
           <label for="name">Name</label>
           <input id="name" name="name" required>
@@ -40,20 +41,20 @@
         </div>
         <div class="unit push xs-1 s-1 m-1 l-1">
           <label for="address">Address</label>
-          <input id="address" type="text" required>
+          <textarea id="address" name="text" required></textarea>
         </div>
-        <div class="unit push-0 xs-1 s-1 m-1 l-1">
-          <h2>Mission Statement</h2>
-        </div>
-        <div class="unit push xs-1 s-1 m-1 l-1">
+      </fieldset>
+      <fieldset class="unit push-0 xs-1 s-1 m-1 l-1">
+        <legend>Mission statement</legend>
+        <div>
           <label for="statement">Why do you want to go to Mars?</label>
-          <textarea id="statement" name="" required>
+          <textarea id="statement" name="text" required></textarea>
         </div>
+        </fieldset>
         <div class="unit push xs-1 s-1 m-1 l-1">
           <button class="btn btn-light mega" type="submit">Register for the trip!</button>
         </div>
         <input type="hidden" name="_subject" value="Request to join the mission">
-      </form>
     </div>
   </section>
 </body>
